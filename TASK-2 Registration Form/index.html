@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Enroll Now</h1>
+    <marquee class="marquee" behavior="alternate" scrollamount="13" direction="left">
+        <h2>Student Enrollment Form</h2>
+    </marquee>
+
+    <div class="container">
+
+        <!--Registration Form container-->
+        <div class="registrationcontainer">
+            <!--input fields for registration form-->
+            <div class="name">
+                <label class="label">Name: </label>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter Your Name" />
+            </div>
+            <div class="email">
+                <label class="label">E-Mail: </label>
+                <input class="input" type="email" id="email" name="email" placeholder="Enter your Email Id" />
+            </div>
+            <div class="age">
+                <label class="label">Age: </label>
+                <input class="input" type="number" max="99" min="10" id="age" name="age" placeholder="Enter your Age" />
+            </div>
+            <div class="img">
+                <label class="label">Image Url: </label>
+                <input class="input" type="text" id="img" name="img" placeholder="Enter your img Url">
+            </div>
+            <div class="gender">
+                <label class="label">gender: </label>
+                <!-- <input class="input" type="text" id="gender" name="gender" placeholder="Enter your img Id"> -->
+                <select class="input" id="gender" name="gender">
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                </select>
+            </div>
+            <div class="skills">
+                <label class="label">Enter Your Skills: </label>
+                <input class="input" type="text" id="skills" name="skills" placeholder="Enter your Skills" />
+            </div>
+            <button class="btn">Enroll Student</button> 
+        </div>
+
+        <!-- <div class="vl"></div> -->
+        <!--Data displayed in the same screen-->
+        <div class="output">
+            <!--Data stored dynamically inside the container-->
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
