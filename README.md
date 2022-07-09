@@ -11,12 +11,11 @@ Internship Started on Date : 01/07/2022
 <br>
 
 <br>
-All Website are fully responsive.
-<br>
 👉 Task- 1 : https://krishnat03.github.io/LMGVIP-WEB-DEV/TASK-1%20Basic%20To-do%20WebApp/index.html
 <br>
-
+👉 Task- 2 : https://krishnat03.github.io/LMGVIP-WEB-DEV/TASK-2%20Registration%20Form/index.html
+<br>
 
 <br>
-Internship completed on Date :
+Internship completed on Date : 10/07/2022
 <br>
