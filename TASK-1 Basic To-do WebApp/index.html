@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo list</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <form class="inputDiv">
+        <div class="input-btn">
+            <input type="text" class="input" placeholder="Add Your Todo List">
+            <button class="submitBtn" type="submit">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+        </div>
+    </form>
+    <div class="select">
+        <select name="todos" class="form-select filter-todo select-btn">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+        </select>
+    </div>
+    <div class="inputDiv results newDiv">
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

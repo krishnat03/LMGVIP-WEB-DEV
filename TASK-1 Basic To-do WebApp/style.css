@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(112,51,150);
+    background: linear-gradient(80deg, rgba(112,51,150,1) 15%, rgba(155, 61, 255, 0.973) 52%, rgba(112,51,150,1) 84%);
+    background-size: 700% 700%;
+    background-repeat: no-repeat;
+    animation: change 10s ease-in-out infinite;
+    font-family: 'Merriweather', serif;
+    color: white;
+    height: 95vh;
+    width: 95vw;
+}
+
+h1 {
+    color: #fad8ff;
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    background-color: #fad8ff;
+    width: 50vw;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding-left: 0.6rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+}
+
+.submitBtn {
+    height: 2.8rem;
+    width: 2.8rem;
+    font-size: 2.2rem;
+    margin-left: 0.8rem;
+    background: none;
+    border: none;
+}
+
+.submitBtn:hover {
+    transform: scale(1.3);
+    color: #431111;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.select-btn {
+    background-color: #fad8ff;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.newDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.taskDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fad8ff;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    width: 50vw;
+}
+
+.screen {
+    background-color: #fad8ff;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    width: 100%;
+}
+
+.inputScreen {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+}
+
+.date {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    color: hsl(0, 0%, 40%);
+}
+
+.edit {
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    background-color: #1e29c6;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.delete {
+    padding: 0.5rem;
+    background-color: red;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.done {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: green;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.checked {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 650px) {
+    .input {
+        width: 65vw;
+    }
+
+    .select-btn {
+        width: 40vw;
+    }
+
+    .taskDiv {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .input {
+        width: 72vw;
+    }
+
+    .select-btn {
+        width: 60vw;
+    }
+
+    .taskDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputScreen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .edit{
+        margin: 0.5rem;
+    }
+
+    .edit,.delete,.done{
+        width: 25vw;
+    }
+}
